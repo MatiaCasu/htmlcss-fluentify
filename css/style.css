@@ -110,3 +110,18 @@ nav a, .button {
   padding: 15px 15px;
 }
 /* /HERO */
+
+/* MAIN */
+.main-title{
+  background-color: lightgrey;
+  text-align: center;
+  padding: 40px 0;
+  color: grey;
+}
+
+.main-title > h3{
+  font-size:20px;
+  padding-bottom: 20px;
+  color: black;
+}
+/* /MAIN */
