@@ -29,7 +29,7 @@ header{
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 /* HEADER E CONTAINER*/
@@ -70,7 +70,7 @@ a:not(#a-special){
 }
 
 .button, #special-button{
-  min-width: 300px;
+  min-width: 500px;
   padding: 5px 5px;
   border-radius: 5px;
   background-color: #7cbb02;
@@ -112,7 +112,7 @@ a:not(#a-special){
   margin: 40px 0;
 }
 
-.hero-text > .button{
+.big.button{
   margin: 10px 0;
   font-size: 15px;
   padding: 15px 15px;
@@ -152,6 +152,7 @@ a:not(#a-special){
 }
 
 .box  h4{
+  height: 50px;
   font-size: 20px;
   color: #7cbb02;
 }
@@ -179,16 +180,16 @@ main > hr{
   height: 350px;
 }
 
-.box.row2 h4{
+.box.row2 h2{
   color: #000;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .box.row2 .box-text{
+  float: right;
   text-align: left;
   max-width: 80%;
   padding-top: 20px;
-  margin: auto;
 }
 /* /MAIN ROW 2 */
 
@@ -197,25 +198,36 @@ main > hr{
 }
 
 .foot-title{
-  color: black;
   min-width: 50%;
+}
+
+.foot-title > h2{
+  color: black;
+  font-size: 20px;
   text-align: left;
 }
 
 .foot-text{
-  min-width: 25%;
+  min-width: 30%;
   text-align: right;
 }
 
+.foot-text > select{
+  margin: 0 10px 0 15px;
+  color: grey;
+  background-color: lightgrey;
+  border-style: none;
+  border-bottom: 1px grey solid;
+}
+
 .foot-button{
-  min-width: 24%;
+  min-width: 19%;
   text-align: right;
 }
 
 .foot-help{
-  display: block;
   min-width: 100%;
   text-align: right;
-  margin: 20px 0;
+  margin-top: 40px;
 }
 /* /MAIN */
