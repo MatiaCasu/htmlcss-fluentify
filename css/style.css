@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 14px;
-  /* border: 1px solid black; */
+  font-size: 13px;
 }
 /* RESET */
 
@@ -11,6 +10,7 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
 .clearfix::after{
   content: "";
   display: block;
@@ -20,7 +20,6 @@ body{
 p{
   color: grey;
 }
-
 /* /BODY */
 
 /* HEADER E CONTAINER */
@@ -37,27 +36,37 @@ header{
 
 /* LOGO e NAV */
 .logo{
-  width: 10%;
-  vertical-align: bottom;
+  width:10%;
+  margin-top:10px;
 }
 
 .logo, nav{
+  vertical-align: middle;
+}
+
+.nav-list li, .nav-login li, nav{
+  display: inline-block;
   margin-top: 10px;
 }
 
-nav{
-  width: calc(90% - 5px);
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
+.nav-list{
+  text-align: center;
+  width: 50%;
 }
 
-nav a, .button {
+.nav-login{
+  width: 39%;
+  text-align: right;
+}
 
+nav a{
+  margin-right: 20px;
+}
+
+a:not(#a-special){
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  margin: 0 10px;
 }
 
 .button, #special-button{
@@ -73,29 +82,17 @@ nav a, .button {
   background: none;
 }
 
-.nav-list, .nav-login{
-  display: inline-block;
-}
 
-.nav-list{
-  margin: 0 20px;
-}
-
-.nav-login{
-  position: absolute;
-  right: 0;
-}
 /* /LOGO E NAV */
 
 /* /HERO */
 .hero-body{
   height: 400px;
-  margin-top: 50px;
   width: 100%;
   background-image: url(../img/background-header.png);
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 110% 100%;
 }
 
 .hero-body > .container{
@@ -164,6 +161,7 @@ nav a, .button {
   margin: auto;
   border-style: grey;
 }
+
 main > hr{
   width: 95%;
   margin: auto;
@@ -176,13 +174,16 @@ main > hr{
   max-width: 50%;
   margin: auto;
 }
+
 .box.row2 img{
   height: 350px;
 }
+
 .box.row2 h4{
   color: #000;
   font-size: 30px;
 }
+
 .box.row2 .box-text{
   text-align: left;
   max-width: 80%;
@@ -200,14 +201,17 @@ main > hr{
   min-width: 50%;
   text-align: left;
 }
+
 .foot-text{
   min-width: 25%;
   text-align: right;
 }
+
 .foot-button{
   min-width: 24%;
   text-align: right;
 }
+
 .foot-help{
   display: block;
   min-width: 100%;
