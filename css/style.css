@@ -30,7 +30,7 @@ header{
 }
 
 .container, .hero-text.container{
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 /* HEADER E CONTAINER*/
@@ -138,6 +138,7 @@ nav a, .button {
 /* MAIN ROW 1 */
 .box-main{
   max-width: calc(100% / 3);
+  margin: auto;
   text-align: center;
   display: inline-block;
   float:left;
@@ -148,7 +149,7 @@ nav a, .button {
 }
 
 .box-main *{
-  margin: 20px 20px;
+  margin: 30px 20px;
 }
 
 .box-main  h4{
@@ -161,8 +162,29 @@ nav a, .button {
   margin: auto;
   border-style: grey;
 }
+main > hr{
+  width: 95%;
+  margin: auto;
+  border-style: grey;
+}
 /* /MAIN ROW 1 */
 
 /* MAIN ROW 2 */
-
+.main-row2 > .box-main{
+  max-width: 50%;
+  margin: auto;
+}
+.main-row2 img{
+  height: 350px;
+}
+.main-row2 h4{
+  color: #000;
+  font-size: 30px;
+}
+.main-row2 .box-text{
+  text-align: left;
+  max-width: 80%;
+  padding-top: 20px;
+  margin: auto;
+}
 /* /MAIN */
