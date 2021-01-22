@@ -29,7 +29,7 @@ header{
   color: #fff;
 }
 
-.container, .hero-text.container{
+.container {
   width: 80%;
   margin: 0 auto;
 }
@@ -53,6 +53,7 @@ nav{
 }
 
 nav a, .button {
+
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -60,6 +61,7 @@ nav a, .button {
 }
 
 .button, #special-button{
+  min-width: 300px;
   padding: 5px 5px;
   border-radius: 5px;
   background-color: #7cbb02;
@@ -96,7 +98,7 @@ nav a, .button {
   background-position: right;
 }
 
-.hero-text.container{
+.hero-body > .container{
   position: relative;
   height: 100%;
 }
@@ -121,14 +123,14 @@ nav a, .button {
 /* /HERO */
 
 /* MAIN TITLE */
-.main-title{
+.interline{
   background-color: lightgrey;
   text-align: center;
   padding: 40px 0;
   color: grey;
 }
 
-.main-title > h3{
+.interline > h3{
   font-size:20px;
   padding-bottom: 20px;
   color: black;
@@ -136,7 +138,7 @@ nav a, .button {
 /* /MAIN TITLE */
 
 /* MAIN ROW 1 */
-.box-main{
+.box{
   max-width: calc(100% / 3);
   margin: auto;
   text-align: center;
@@ -144,15 +146,15 @@ nav a, .button {
   float:left;
 }
 
-.box-main > img{
+.box > img{
   height: 100px;
 }
 
-.box-main *{
+.box *{
   margin: 30px 20px;
 }
 
-.box-main  h4{
+.box  h4{
   font-size: 20px;
   color: #7cbb02;
 }
@@ -170,21 +172,46 @@ main > hr{
 /* /MAIN ROW 1 */
 
 /* MAIN ROW 2 */
-.main-row2 > .box-main{
+.box.row2{
   max-width: 50%;
   margin: auto;
 }
-.main-row2 img{
+.box.row2 img{
   height: 350px;
 }
-.main-row2 h4{
+.box.row2 h4{
   color: #000;
   font-size: 30px;
 }
-.main-row2 .box-text{
+.box.row2 .box-text{
   text-align: left;
   max-width: 80%;
   padding-top: 20px;
   margin: auto;
+}
+/* /MAIN ROW 2 */
+
+.container > section{
+  display: inline-block;
+}
+
+.foot-title{
+  color: black;
+  min-width: 50%;
+  text-align: left;
+}
+.foot-text{
+  min-width: 25%;
+  text-align: right;
+}
+.foot-button{
+  min-width: 24%;
+  text-align: right;
+}
+.foot-help{
+  display: block;
+  min-width: 100%;
+  text-align: right;
+  margin: 20px 0;
 }
 /* /MAIN */
