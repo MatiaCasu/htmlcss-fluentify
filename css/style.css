@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 12px;
 }
 /* RESET */
 
@@ -29,14 +29,14 @@ header{
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 /* HEADER E CONTAINER*/
 
 /* LOGO e NAV */
 .logo{
-  width:10%;
+  width:8%;
   margin-top:10px;
 }
 
@@ -46,7 +46,7 @@ header{
 
 .nav-list li, .nav-login li, nav{
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .nav-list{
@@ -55,7 +55,7 @@ header{
 }
 
 .nav-login{
-  width: 39%;
+  width: 40%;
   text-align: right;
 }
 
@@ -70,19 +70,15 @@ a:not(#a-special){
 }
 
 .button, #special-button{
-  min-width: 500px;
   padding: 5px 5px;
   border-radius: 5px;
   background-color: #7cbb02;
 }
 
 #special-button{
-  padding: 5px 10px;
   border: 1px solid white;
   background: none;
 }
-
-
 /* /LOGO E NAV */
 
 /* /HERO */
@@ -113,13 +109,13 @@ a:not(#a-special){
 }
 
 .big.button{
-  margin: 10px 0;
-  font-size: 15px;
-  padding: 15px 15px;
+  margin: 0 0;
+  font-size: 14px;
+  padding: 13px;
 }
 /* /HERO */
 
-/* MAIN TITLE */
+/* INTERLINE */
 .interline{
   background-color: lightgrey;
   text-align: center;
@@ -132,7 +128,7 @@ a:not(#a-special){
   padding-bottom: 20px;
   color: black;
 }
-/* /MAIN TITLE */
+/* /INTERLINE */
 
 /* MAIN ROW 1 */
 .box{
@@ -157,16 +153,18 @@ a:not(#a-special){
   color: #7cbb02;
 }
 
-.hr-style{
-  width: 50px;
+hr{
   margin: auto;
   border-style: grey;
 }
 
+.hr-style{
+  width: 50px;
+  margin: auto;
+}
+
 main > hr{
   width: 95%;
-  margin: auto;
-  border-style: grey;
 }
 /* /MAIN ROW 1 */
 
@@ -193,26 +191,36 @@ main > hr{
 }
 /* /MAIN ROW 2 */
 
-.container > section{
+/* SEZIONE FINALE */
+.foot.interline{
+  height: 150px;
+}
+
+.foot section{
   display: inline-block;
 }
 
-.foot-title{
-  min-width: 50%;
+.foot-text{
+  min-width: 75%;
+  margin-top: 15px;
 }
 
-.foot-title > h2{
+.foot-left{
+  float: left;
+}
+
+.foot-left > h2{
   color: black;
   font-size: 20px;
   text-align: left;
 }
 
-.foot-text{
-  min-width: 30%;
-  text-align: right;
+.foot-right{
+  float: right;
 }
 
 .foot-text > select{
+  text-align: right;
   margin: 0 10px 0 15px;
   color: grey;
   background-color: lightgrey;
@@ -221,13 +229,24 @@ main > hr{
 }
 
 .foot-button{
-  min-width: 19%;
-  text-align: right;
+  float: right;
+  min-width: 20%;
+  height:100px;
+  position: relative;
 }
 
-.foot-help{
+.foot-button > a:first-child{
   min-width: 100%;
-  text-align: right;
-  margin-top: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
 }
-/* /MAIN */
+
+.foot-button > a:last-child{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  right: 50%;
+  transform: translateX(+50%);
+}
