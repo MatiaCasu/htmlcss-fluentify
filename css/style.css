@@ -29,7 +29,7 @@ header{
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 /* HEADER E CONTAINER*/
@@ -70,12 +70,15 @@ a:not(#a-special){
 }
 
 .button, #special-button{
+  text-align: center;
   padding: 5px 5px;
   border-radius: 5px;
   background-color: #7cbb02;
 }
 
 #special-button{
+  display: inline-block;
+  min-width: 80px;
   border: 1px solid white;
   background: none;
 }
@@ -144,7 +147,7 @@ a:not(#a-special){
 }
 
 .box *{
-  margin: 30px 20px;
+  margin: 35px 20px;
 }
 
 .box  h4{
@@ -153,18 +156,17 @@ a:not(#a-special){
   color: #7cbb02;
 }
 
-hr{
+hr, .hr-short{
   margin: auto;
-  border-style: grey;
+  border-style: solid 1px grey;
 }
 
-.hr-style{
+.hr-short{
   width: 50px;
-  margin: auto;
 }
 
 main > hr{
-  width: 95%;
+  width: 90%;
 }
 /* /MAIN ROW 1 */
 
@@ -192,10 +194,6 @@ main > hr{
 /* /MAIN ROW 2 */
 
 /* SEZIONE FINALE */
-.foot.interline{
-  height: 150px;
-}
-
 .foot section{
   display: inline-block;
 }
@@ -219,10 +217,11 @@ main > hr{
   float: right;
 }
 
-.foot-text > select{
-  text-align: right;
+.foot-right > select{
+  text-align: left;
   margin: 0 10px 0 15px;
   color: grey;
+  min-width: 100px;
   background-color: lightgrey;
   border-style: none;
   border-bottom: 1px grey solid;
@@ -236,10 +235,9 @@ main > hr{
 }
 
 .foot-button > a:first-child{
-  min-width: 100%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   margin: 0;
 }
 
@@ -247,6 +245,6 @@ main > hr{
   position: absolute;
   bottom: 0;
   margin: 0;
-  right: 50%;
-  transform: translateX(+50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
